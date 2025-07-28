@@ -1,0 +1,157 @@
+/* Import Tailwind CSS base styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom global styles for the quiz application */
+@layer base {
+  /* Reset default styles and set base font */
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  html,
+  body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Custom scrollbar styles */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+  }
+}
+
+@layer components {
+  /* Custom component styles */
+  .quiz-container {
+    @apply max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg;
+  }
+
+  .question-card {
+    @apply bg-white p-6 rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow duration-200;
+  }
+
+  .option-button {
+    @apply w-full p-4 text-left border border-gray-300 rounded-lg hover:bg-gray-50 hover:border-blue-300 transition-all duration-200 cursor-pointer;
+  }
+
+  .option-button.selected {
+    @apply bg-blue-50 border-blue-500 text-blue-700;
+  }
+
+  .option-button.correct {
+    @apply bg-green-50 border-green-500 text-green-700;
+  }
+
+  .option-button.incorrect {
+    @apply bg-red-50 border-red-500 text-red-700;
+  }
+
+  .timer-display {
+    @apply text-2xl font-bold text-center p-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg shadow-md;
+  }
+
+  .navigation-dot {
+    @apply w-8 h-8 rounded-full border-2 border-gray-300 flex items-center justify-center text-sm font-medium cursor-pointer transition-all duration-200;
+  }
+
+  .navigation-dot.visited {
+    @apply bg-blue-100 border-blue-400 text-blue-700;
+  }
+
+  .navigation-dot.answered {
+    @apply bg-green-100 border-green-400 text-green-700;
+  }
+
+  .navigation-dot.current {
+    @apply bg-blue-500 border-blue-600 text-white;
+  }
+}
+
+@layer utilities {
+  /* Custom utility classes */
+  .text-gradient {
+    @apply bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-float-delay-1 {
+    animation: float 6s ease-in-out infinite;
+    animation-delay: 1s;
+  }
+
+  .animate-float-delay-2 {
+    animation: float 6s ease-in-out infinite;
+    animation-delay: 2s;
+  }
+
+  .animate-float-delay-3 {
+    animation: float 6s ease-in-out infinite;
+    animation-delay: 3s;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.3s ease-out;
+  }
+}
+
+/* Custom keyframe animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+} 
