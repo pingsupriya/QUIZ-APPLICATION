@@ -1,10 +1,10 @@
-# CausalFunnel Quiz Application
+# Quiz Application
 
 A modern, interactive quiz application built with Next.js, React, TypeScript, Material-UI, and Tailwind CSS. This application fetches trivia questions from the Open Trivia Database API and provides a comprehensive quiz experience with timer, navigation, and detailed results.
 
 ## 🎯 Project Overview
 
-This quiz application was built as a coding assignment for the Software Engineer Intern position at CausalFunnel. It demonstrates modern web development practices, clean code architecture, and attention to detail in implementing all specified requirements.
+It demonstrates modern web development practices, clean code architecture, and attention to detail in implementing all specified requirements of the application.
 
 ### Key Features Implemented
 
@@ -189,15 +189,9 @@ Every component and function includes detailed JSDoc comments explaining:
 - Return value explanations
 - Usage examples where applicable
 
-## 🤝 Contributing
 
-This project was created as a coding assignment. For any questions or feedback, please refer to the assignment guidelines.
 
-## 📄 License
-
-This project is created for the CausalFunnel coding assignment. All rights reserved.
-
-## 🙏 Acknowledgments
+### HAVE A GREAT TIME
 
 - **Open Trivia Database**: For providing the quiz questions API
 - **Material-UI**: For the component library and design system
