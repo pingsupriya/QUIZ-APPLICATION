@@ -192,12 +192,3 @@ Every component and function includes detailed JSDoc comments explaining:
 
 
 ### HAVE A GREAT TIME
-
-- **Open Trivia Database**: For providing the quiz questions API
-- **Material-UI**: For the component library and design system
-- **Tailwind CSS**: For utility-first CSS framework
-- **Next.js Team**: For the amazing React framework
-
----
-
-**Built with ❤️ for CausalFunnel Internship** 
